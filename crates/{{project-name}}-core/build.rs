@@ -1,6 +1,7 @@
 use baizekit::api::Builder;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
+    #[cfg(feature = "http")]
     Builder::default()
         .with_project_path("./".to_string())
         .with_handlers_dir("./src/service".to_string())
