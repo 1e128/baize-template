@@ -1,0 +1,7 @@
+[baize]
+name = "crates"
+destination = "crates"
+init = false
+
+
+[placeholders]

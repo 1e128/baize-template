@@ -1,0 +1,8 @@
+[baize]
+name = "service-sdk"
+destination = "src/service"
+init = true
+
+
+[placeholders]
+entity = { prompt = "实体名", type = "string", default = "account" }

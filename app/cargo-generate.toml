@@ -1,0 +1,12 @@
+[baize]
+name = "app"
+destination = ""
+init = false
+
+
+[placeholders]
+project-description = { prompt = "项目描述", type = "string", default = "一个很棒的 Rust 项目" }
+repository = { prompt = "Git 仓库地址", type = "string", default = "https://github.com/your/repo" }
+homepage = { prompt = "主页地址", type = "string", default = "https://your-homepage.com" }
+documentation = { prompt = "文档地址", type = "string", default = "https://docs.rs/your-crate" }
+

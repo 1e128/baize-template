@@ -1,0 +1,31 @@
+[package]
+name = "{{project-name}}-core"
+authors = ["{{authors}}"]
+version.workspace = true
+edition.workspace = true
+
+
+[dependencies]
+{{project-name}}-sdk = { path = "../{{project-name}}-sdk" }
+async-trait = { workspace = true }
+baizekit = { workspace = true, features = ["derive", "db-migration"] }
+chrono = { workspace = true, features = ["serde"] }
+derive_more = { workspace = true, features = ["from", "display"] }
+sea-orm = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+uuid = { workspace = true, features = ["v7"] }
+axum = { workspace = true, optional = true }
+utoipa = { workspace = true, optional = true }
+
+
+[build-dependencies]
+baizekit = { workspace = true, features = ["http-build"] }
+
+
+[features]
+default = []
+http = [
+    "axum",
+    "utoipa"
+]

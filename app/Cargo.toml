@@ -1,0 +1,60 @@
+[workspace]
+members = [
+    "app",
+]
+resolver = "3"
+
+[workspace.package]
+name = "{{project-name}}"
+version = "0.0.1"
+edition = "2024"
+authors = ["{{authors}}"]
+description = "{{project-description}}"
+license = "MIT OR Apache-2.0"
+repository = "{{repository}}"
+homepage = "{{homepage}}"
+documentation = "{{documentation}}"
+
+[workspace.dependencies]
+# infra
+baizekit = "0.1.22"
+
+# async
+async-trait = "0.1.88"
+futures = "0.3.31"
+futures-core = "0.3.31"
+futures-util = "0.3.31"
+tokio = "1.46.1"
+tokio-stream = "0.1.17"
+tokio-util = "0.7.15"
+tokio-tungstenite = "0.27.0"
+
+# serde
+serde = "1.0.219"
+serde_json = "1.0.141"
+serde_repr = "0.1.20"
+serde_with = "3.14.0"
+
+# database
+sea-orm = "1.1.13"
+sea-orm-migration = "1.1.13"
+
+# http
+axum = "0.8.4"
+reqwest = "0.12.22"
+tower-http = "0.6.6"
+utoipa = "5.4.0"
+
+# others
+chrono = "0.4.41"
+clap = "4.5.41"
+dotenvy = "0.15.7"
+dashmap = "*"
+derive_more = "2.0.1"
+num_enum = "0.7.4"
+rust_decimal = "1.37.2"
+short-uuid = "0.2.0"
+snafu = "0.8.6"
+strum = "0.27.2"
+tracing = "0.1.41"
+uuid = "1.17.0"

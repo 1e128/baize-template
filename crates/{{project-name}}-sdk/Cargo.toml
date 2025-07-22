@@ -1,0 +1,15 @@
+[package]
+name = "{{project-name}}-sdk"
+authors = ["{{authors}}"]
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+async-trait = { workspace = true }
+baizekit = { workspace = true }
+chrono = { workspace = true, features = ["serde"] }
+sea-orm = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+snafu = { workspace = true }
+utoipa = { workspace = true, features = ["axum_extras", "decimal", "chrono", "uuid"] }
+uuid = { workspace = true, features = ["v7", "serde"] }

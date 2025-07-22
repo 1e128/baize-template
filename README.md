@@ -1,1 +1,1 @@
-# baizekit-template
+# baize-template
