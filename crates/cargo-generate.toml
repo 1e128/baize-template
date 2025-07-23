@@ -5,3 +5,4 @@ init = false
 
 
 [placeholders]
+db_prefix = { prompt = "数据库表前缀", type = "string" }
