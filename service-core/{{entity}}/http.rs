@@ -1,8 +1,8 @@
 use axum::Json;
 use axum::extract::{Path, Query, State};
+use baizekit::api::{ApiError, ApiOK, Page, Reply};
 use {{project-name | snake_case}}_sdk::service::{{entity}}::*;
 use {{project-name | snake_case}}_sdk::error::ApiResult;
-use {{project-name | snake_case}}_sdk::prelude::{ApiError, ApiOK, Page, Reply};
 use uuid::Uuid;
 
 use crate::setup::state::AppState;
